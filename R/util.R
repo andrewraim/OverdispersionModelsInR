@@ -28,21 +28,21 @@ normalize <- function(x) { x / sum(x) }
 
 null.tx <- function(phi) { list() }
 
-prob.simplex.tx <- function(x)
+# Transform from probability simplex S^J to R^(J-1)
+mlogit <- function(p)
 {
-	## x is a k-1 dimensional real-valued vector
-	## Transform x to k-dimensional probability simplex
-	## Do one of two possible things, depending if k == 2
-	k <- length(x) + 1
+        J <- length(p)
+        x <- log(p[-J] / p[J])
+        return(x)
+}
 
-	if (k == 2) {
-		fx <- c(plogis(x), 1-plogis(x))
-	} else {
-		N <- sum(plogis(x)) + plogis(sum(x))
-		fx <- c(plogis(x), plogis(sum(x))) / N
-	}
-
-	return(fx)
+# Transform from R^(J-1) to probability simplex S^J
+inv.mlogit <- function(x)
+{
+        z <- exp(x)
+        P.J <- 1 / (1 + sum(z))
+        p <- c(z * P.J, P.J)
+        return(p)
 }
 
 integrate.trap <- function(f, xlim, n, ...)

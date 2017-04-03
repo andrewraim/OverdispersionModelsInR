@@ -1,17 +1,15 @@
 fit.dm.mle <- function(y, m, extra.tx = null.tx, var.names = NULL)
 {
-	if (length(m) == 1) m <- rep(m, length(y))
+	if (length(m) == 1) m <- rep(m, ncol(y))
 	k <- nrow(y)
 
-	Data <- list(y = y, m = m, n = length(y))
+	Data <- list(y = y, m = m, n = ncol(y))
 	qq <- k
-
 	phi.init <- rep(0, qq)
 
 	theta.tx <- function(phi)
 	{
-		idx <- 1:(k-1)
-		list(Pi = prob.simplex.tx(phi[idx]), rho = plogis(phi[k]))
+		list(Pi = inv.mlogit(phi[seq_len(k-1)]), rho = plogis(phi[k]))
 	}
 	
 	loglik <- function(phi, Data)
