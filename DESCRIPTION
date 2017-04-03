@@ -1,0 +1,12 @@
+Package: OverdispersionModelsInR
+Type: Package
+Title: R package for likelihood-based analysis of data with
+        overdispersion
+Version: 0.1
+Date: 2014-04-15
+Author: Andrew M. Raim
+Maintainer: Andrew M. Raim <andrew.raim@gmail.com>
+Description: TBD
+License: TBD
+Depends: numDeriv, CompQuadForm, combinat
+Packaged: 2015-02-17 14:34:01 UTC; araim
