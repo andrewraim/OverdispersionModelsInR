@@ -11,7 +11,8 @@ _ R Supplement to "Analysis of Overdispersed Data using SAS"_
 [handout](http://www.umbc.edu/~araim1/pub/psday2014-workshop/handout.pdf) |
 [tech report](http://andrewraim.github.io/publications#OverdispersionModelsInR2015)].
 
-The original release of the package is [OverdispersionModelsInR_0.1.tar.gz](https://github.com/andrewraim/OverdispersionModelsInR/archive/v0.1.tar.gz). Some improvements and corrections have been made
+The original release of the package is [OverdispersionModelsInR_0.1.tar.gz](https://github.com/andrewraim/OverdispersionModelsInR/archive/v0.1.tar.gz).
+Some improvements and corrections have been made
 since then.
 
 The code is currently not documented. This means, for example, that
@@ -20,22 +21,20 @@ nothing. I hope to add this documentation in the future,
 and continue to make improvements to the package. If you find the package to be
 helpful, or have suggestions, please send me an email and let me know.
 
-This package featured an early implementation of the Mixture Link distribution.
-More recent code is available in the package [mixlink](http://cran.r-project.org/web/packages/mixlink).
+This initial version of this package featured an early implementation of the
+Mixture Link distribution. Functionality related to Mixture Link has been
+removed from later versions, and is now available in the package
+[mixlink](http://cran.r-project.org/web/packages/mixlink).
 
 
 # Installation
-The package can be installed directly from Github using
+The latest package code can be installed directly from Github using
 ``` R
 > library(devtools)
 > install_github("andrewraim/OverdispersionModelsInR")
 ```
 
-Or, download the package tarball and install it locally.
+Or, download the package tarball (as a `tar.gz` file) and install it locally.
 ``` R
 > install.packages("/path/to/OverdispersionModelsInR_0.1.tar.gz", repos = NULL)
 ```
-
-You may need to install development tools as a prerequisite to build the
-package, as some of it is written in C. See this
-[link](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites) for instructions specific to Windows, Mac, and Linux users.

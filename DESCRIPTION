@@ -1,12 +1,11 @@
 Package: OverdispersionModelsInR
 Type: Package
-Title: R package for likelihood-based analysis of data with
-        overdispersion
+Title: Likelihood-based analysis of data with overdispersion
 Version: 0.2
 Date: 2017-04-04
 Author: Andrew M. Raim
 Maintainer: Andrew M. Raim <andrew.raim@gmail.com>
-Description: TBD
-License: TBD
+Description: A framework for estimation of nonstandard likelihoods (such as those supporting overdispersion). Supports optimization through optim and Newton-like algorithms. See the technical report <http://andrewraim.github.io/publications#OverdispersionModelsInR2015>.
+License: GPL (>= 2)
 Depends: numDeriv, CompQuadForm, combinat
 Packaged: 2015-02-17 14:34:01 UTC; araim
