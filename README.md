@@ -7,8 +7,8 @@ The objective was to use R to reproduce analyses from the book
 by Jorge Morel and Nagaraj Neerchal. We were especially interested in analyses involving likelihoods for binomial data with extra variation. For more
 information, see the technical report or the ProbStatDay 2014 workshop presentation
 _ R Supplement to "Analysis of Overdispersed Data using SAS"_
-[[slides](http://www.umbc.edu/~araim1/pub/psday2014-workshop/slides.pdf) |
-[handout](http://www.umbc.edu/~araim1/pub/psday2014-workshop/handout.pdf) |
+[[slides](https://drive.google.com/uc?export=view&id=0B-2GT91ukpxVd2c4R3U1cW9DYU0) |
+[handout](https://drive.google.com/uc?export=view&id=0B-2GT91ukpxVZC1TTndocFRaaDg) |
 [tech report](http://andrewraim.github.io/publications#OverdispersionModelsInR2015)].
 
 The original release of the package is [OverdispersionModelsInR_0.1.tar.gz](https://github.com/andrewraim/OverdispersionModelsInR/archive/v0.1.tar.gz).
